@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Risposta in Frequenza - Quadripolo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="crt-overlay"></div>
+
+    <div class="container">
+        <div class="control-panel">
+            <h2>Curva della risposta in frequenza</h2>
+            
+            <label>Frequenze (Hz):</label>
+            <input id="freqInput" type="text" value="20, 40, 60, 80, 100, 120, 140, 160, 180, 200">
+
+            <label>Valori Vin (V):</label>
+            <input id="vinInput" type="text" value="14, 14, 14, 14, 14, 14, 14, 14, 14, 14">
+
+            <label>Valori Vout (V):</label>
+            <input id="voutInput" type="text" value="5, 4, 5, 6, 7, 7, 7, 7, 7, 7">
+
+            <button id="updateBtn">Aggiorna Grafico</button>
+        </div>
+
+        <div class="oscilloscope">
+            <canvas id="scopeCanvas"></canvas>
+            <div class="label">Rilievo sperimentale della risposta in frequenza di un quadripolo</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
