@@ -14,20 +14,35 @@
             <h2>Curva della risposta in frequenza</h2>
             
             <label>Frequenze (Hz):</label>
-            <input id="freqInput" type="text" value="20, 40, 60, 80, 100, 120, 140, 160, 180, 200">
+            <input id="freqInput" type="text" value="20,40,60,80,100,120,140,160,180,200">
 
             <label>Valori Vin (V):</label>
-            <input id="vinInput" type="text" value="14, 14, 14, 14, 14, 14, 14, 14, 14, 14">
+            <input id="vinInput" type="text" value="21.12,21.08,21.22,21.03,20.00,20.25,20.14,20.03,20.07,20.19">
 
             <label>Valori Vout (V):</label>
-            <input id="voutInput" type="text" value="5, 4, 5, 6, 7, 7, 7, 7, 7, 7">
+            <input id="voutInput" type="text" value="2.42,4.93,6.81,8.41,9.44,10.31,10.88,11.13,11.22,11.48">
 
-            <button id="updateBtn">Aggiorna Grafico</button>
+            <label>Fase (°):</label>
+            <input id="faseInput" type="text" value="93.60,74.88,66.64,48.96,39.60,30.24,24.19,17.86,13.61,8.64">
+
+            <button id="updateBtn">Aggiorna Grafici</button>
         </div>
 
         <div class="oscilloscope">
-            <canvas id="scopeCanvas"></canvas>
-            <div class="label">Rilievo sperimentale della risposta in frequenza di un quadripolo</div>
+            <canvas id="scope1"></canvas>
+            <div class="label">Vout / Vin vs Frequenza</div>
+        </div>
+        <div class="oscilloscope">
+            <canvas id="scope2"></canvas>
+            <div class="label">Fase vs Frequenza</div>
+        </div>
+        <div class="oscilloscope">
+            <canvas id="scope3"></canvas>
+            <div class="label">Log(Vout / Vin) vs Frequenza</div>
+        </div>
+        <div class="oscilloscope">
+            <canvas id="scope4"></canvas>
+            <div class="label">Log(Fase) vs Frequenza</div>
         </div>
     </div>
 
